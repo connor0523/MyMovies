@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyMovies</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="./movies.js"></script>
+    <script src="https://kit.fontawesome.com/08fa670fbb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section id="landing__page">
+      <nav>
+        <div class="nav__container">
+          <img class="logo" src="./Assets/mymovies-logo-removebg.png" alt="" />
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#highlights" class="nav__link">Why?</a></li>
+            <li><a href="./allmovies.html" class="nav__link nav__link--primary">Movies</a></li>
+          </ul>
+        </div>
+        <button class="button__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+            <button class="button__menu button__menu--close" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="menu__links">
+                <li class="menu__list">
+                    <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#highlights" class="menu__link" onclick="closeMenu()">Why?</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#featured__movies" class="menu__link" onclick="closeMenu()">Movies</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <header>
+        <div class="header__container">
+          <div class="header__description">
+            <h1 class="header__description--title">
+              <span class="text-maroon"
+                >Top Recommended Movies From Me</span
+              >
+            </h1>
+            <h2 class="header__description-sub--title">
+              Find your new favorite movie with
+              <span class="text-maroon">MyMovies</span>
+            </h2>
+            <a href="#featured__movies"><button class="button">Browse Movies</button></a>
+          </div>
+          <figure class="header__img--wrapper">
+            <img src="./Assets/MovieDude.svg" alt="">
+          </figure>
+        </div>
+      </header>
+    </section>
+    <main>
+        <section id="highlights">
+            <div class="container1">
+                <div class="row">
+                    <h2 class="section__title">
+                        Why choose <b><span class="text-maroon">MyMovies?</span></b>
+                    </h2>
+                    <div class="highlight__wrapper">
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fa-solid fa-money-bill"></i>
+                            </div>
+                                <h3 class="highlight__sub--title">
+                                    Affordable
+                                </h3>
+                                <p class="highlight__para">
+                                    Our monthly subscription starts from $5.99.
+                                </p>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fa-solid fa-film"></i>
+                            </div>
+                                <h3 class="highlight__sub--title">
+                                    Unlimited access
+                                </h3>
+                                <p class="highlight__para">
+                                    Get access on all devices with no limits.
+                                </p>
+                            
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                            </div>
+                                <h3 class="highlight__sub--title">
+                                    Trusted by many
+                                </h3>
+                                <p class="highlight__para">
+                                    Our services are used by over 10,000+ users.
+                                </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="featured__movies"> 
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Featured <span class="text-maroon">Movies</span>
+                    </h2>
+                    
+                    <div class="movies">
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                            <img class="movie__img" src="./Assets/Avenegers.jpg" alt="">
+                            <div class="movie__img-wrapper--bg">
+                                <div class="movie__description">
+                                
+                                <div class="movie__description--para">
+                                    <p>
+                                        Earth's Mightiest Heroes stand as the planet's first line of defense 
+                                        against the most powerful threats in the universe. <br> The Avengers began 
+                                        as a group of extraordinary individuals who were assembled to defeat 
+                                        Loki and his Chitauri army in New York City. 
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            </div>
+                            <div class="movie__title">
+                                Avengers
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                8/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                1.519 Billion
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/Waterboy.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    
+                                    <div class="movie__description--para">
+                                        <p>
+                                            THE WATERBOY stars Adam Sandler as Bobby Boucher, a 31-year-old man who lives 
+                                            with his mother and cares only about providing the freshest, most delicious water 
+                                            for the football team. 
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                            <div class="movie__title">
+                                WaterBoy
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                6.1/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                190 Million
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/HarryPotter.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    
+                                    <div class="movie__description--para">
+                                        <p>
+                                            A story about Harry Potter, an orphan brought up by his aunt and uncle 
+                                            because his parents were killed when he was a baby. <br> Harry is unloved by 
+                                            his uncle and aunt but everything changes when he is invited to join Hogwarts 
+                                            School of Witchcraft and Wizardry and he finds out he's a wizard. 
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                            <figure>
+                                
+                            </figure>
+                            <div class="movie__title">
+                                HarryPotter and the Philosopher's Stone
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                7.6/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                974 Million
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/SuperMan.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    
+                                    <div class="movie__description--para">
+                                        <p>
+                                            Earth's Mightiest Heroes stand as the planet's first line of defense 
+                                            against the most powerful threats in the universe. <br> The Avengers began 
+                                            as a group of extraordinary individuals who were assembled to defeat 
+                                            Loki and his Chitauri army in New York City. 
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                </div>
+                            <figure>
+                                
+                            </figure>
+                            <div class="movie__title">
+                                Man Of Steel
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                7.1/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                668 Million
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="latest__movies">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        More <span class="text-maroon">Movies</span>
+                    </h2>
+                    <div class="movies">
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/BackToTheFuture.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    
+                                    <div class="movie__description--para">
+                                        <p>
+                                            Marty McFly, a 17 year old high school student gets lost in 1955 by an accident, 
+                                            30 years back in time. <br> With the help of his friend Dr. Emmet Brown, he is desperately 
+                                            trying to find his way back to the future in the year 1985. It becomes a battle against the clock. 
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                </div>
+                            <div class="movie__title">
+                                Back to the Future
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                8.5/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                381.1 Million
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/TenaciousD.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    
+                                    <div class="movie__description--para">
+                                        <p>
+                                            To become the greatest band of all time, two slacker, wannabe-rockers set out on a quest to steal a 
+                                            legendary guitar pick. <br> This pick gives its holders incredible guitar skills, from a maximum security Rock and 
+                                            Roll museum. 
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                </div>
+                            <div class="movie__title">
+                                Tenacious D
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                6.8/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                9 Million
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/LittleMan.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    <div class="movie__description--para">
+                                        <p>
+                                            A wannabe-dad mistakes a vertically-challenged criminal on the lam for his newly-adopted son. <br> After leaving prison, 
+                                            dwarf criminal Calvin Sims joins his moron brother Percy to steal an expensive huge diamond for the mobster Walken. 
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                </div>
+                            <div class="movie__title">
+                                Little Man
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                4.4/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                101 Million
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/FightClub.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    <div class="movie__description--para">
+                                        <p>
+                                            An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves 
+                                            into much more. <br> A nameless first person narrator (Edward Norton) attends support groups in attempt to 
+                                            subdue his emotional state and relieve his insomniac state. 
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                </div>
+                            <figure>
+                                
+                            </figure>
+                            <div class="movie__title">
+                                Fight Club
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                8.8/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                100.9 Million
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/ABeautifulMind.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    <div class="movie__description--para">
+                                        <p>
+                                            A Beautiful Mind, American biographical film, released in 2001, that told the story of American Nobel 
+                                            Prize winner John Nash, whose innovative work on game theory in mathematics was in many ways 
+                                            overshadowed by decades of mental illness. 
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                </div>
+                            <figure>
+                                
+                            </figure>
+                            <div class="movie__title">
+                                A Beasutiful Mind
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                8.2/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                313 Million
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/Spiderman.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    <div class="movie__description--para">
+                                        <p>
+                                            Peter Parker is beset with troubles in his failing personal life as he battles a 
+                                            brilliant scientist named Doctor Otto Octavius. <br> Peter Parker is an unhappy man: after 
+                                            two years of fighting crime as Spider-Man, his life has begun to fall apart.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                </div>
+                            <figure>
+                                
+                            </figure>
+                            <div class="movie__title">
+                                Spider-Man 2
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                7.4/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                788.6 Million
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/PrincessAndTheFrog.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    <div class="movie__description--para">
+                                        <p>
+                                            Set in New Orleans during the 1920s, the film tells the story of a hardworking waitress 
+                                            named Tiana who dreams of opening her own restaurant. <br> After kissing a prince who has been 
+                                            turned into a frog by an evil witch doctor, Tiana becomes a frog herself and must find a way 
+                                            to turn back into a human before it is too late. 
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                </div>
+                            <figure>
+                                
+                            </figure>
+                            <div class="movie__title">
+                                Princess and the Frog
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                7.1/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                104.4 Million
+                            </div>
+                        </div>
+                        <div class="movie">
+                            <div class="movie__img--wrapper">
+                                <img class="movie__img" src="./Assets/Jaws.jpg" alt="">
+                                <div class="movie__img-wrapper--bg">
+                                    <div class="movie__description">
+                                    <div class="movie__description--para">
+                                        <p>
+                                            When a killer shark unleashes chaos on a beach community off Cape Cod, it's up to a 
+                                            local sheriff, a marine biologist, and an old seafarer to hunt the beast down. <br> It's a 
+                                            hot summer on Amity Island, a small community whose main business is its beaches 
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                </div>
+                            <figure>
+                                
+                            </figure>
+                            <div class="movie__title">
+                                Jaws
+                            </div>
+                            <div class="movie__rating">
+                                <span class="text-gold"><i class="fa-solid fa-star"></i></span>
+                                8.1/10 IMDB
+                            </div>
+                            <div class="movie__money--made">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                272.2 Million
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section id="explore">
+            <div class="container2">
+                <div class="row row__column">
+                    <h2>Explore even more <span class="text-maroon">Movies!</span></h2>
+                    <a href="https://letterboxd.com/" target="_blank"><button class="explore__button">Browse More Movies</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="row footer_row">
+            <a href="#" class="footer_anchor">
+             <figure class="footer_logo">
+               <img src="./Assets/mymovies-logo-removebg.png" class="logo1" alt="">
+             </figure>
+             <span class="footer_logo--popper">
+               Top↑
+               <i class="fas fa-arrrow-up"></i>
+             </span>
+            </a> 
+            <div class="footer_social--list">
+             <a href="https://github.com/connor0523" target="_blank" class="
+             footer_social--link
+             link__hover-effect
+             link__hover-effect--white
+             " target="_blank">GitHub</a>
+             <a href="https://www.linkedin.com/in/connor-ellis-46b7b6253/" target="_blank" class="
+             footer_social--link
+             link__hover-effect
+             link__hover-effect--white
+             " target="_blank">LinkedIn</a>
+             <a href="#" onclick="toggleModal()" class="
+             footer_social--link
+             link__hover-effect
+             link__hover-effect--white
+             ">Contact</a>
+             <!--FILL RESUME HERE--> <a href="" target="_blank" class="
+             footer_social--link
+             link__hover-effect
+             link__hover-effect--white
+             " target="_blank" download>Resume</a>
+            </div>
+            <div class="footer_copyright">Copyright© 2022 Connor Ellis</div>
+           </div>
+    </footer>
+  </body>
+</html>

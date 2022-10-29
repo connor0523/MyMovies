@@ -141,7 +141,7 @@ function getMovies() {
       title: "Man Of Steel",
       url: "Assets/Superman.jpg",
       boxOffice: 668,
-      description: "Earth's Mightiest Heroes stand as the planet's first line of defense against the most powerful threats in the universe. <br> The Avengers began as a group of extraordinary individuals who were assembled to defeat Loki and his Chitauri army in New York City.",
+      description: "A young boy learns that he has extraordinary powers and is not of this Earth. As a young man, he journeys to discover where he came from and what he was sent here to do. But the hero in him must now emerge if he is to save the world from annihilation and become the symbol of hope for all mankind.", 
       rating: 7.1,
     },
     {

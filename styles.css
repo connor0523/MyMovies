@@ -389,6 +389,7 @@ button:active {
     transition: opacity 300ms, transform 450ms ease;
     color: rgb(0, 0, 0);
     max-width: 550px; 
+    overflow: scroll;
 }
 
 .movie__description--para {

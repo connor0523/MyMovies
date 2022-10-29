@@ -592,12 +592,45 @@ opacity: 1;
     }
 
     .highlight {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.333%;
     }
+
 
     .highlight__para {
         padding-bottom: 20px;
     }
+    .header__description {
+        padding: 0 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .movie {
+        width: 50%;
+    }
+
+    .movie__img {
+        height: 100%;
+    }
+
+    .container1 {
+        height: 50vh;
+    }
+
+    
     
 }
 
